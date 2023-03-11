@@ -50,6 +50,12 @@ body {
     color: var(--couleur-texte);
 }
 
+nav ul a{
+
+    color:black;
+    font-size: 1.2em;
+
+}
 
 /* Base décimale */
 html {

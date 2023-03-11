@@ -27,8 +27,65 @@ header {
     background-color:rgb(223, 218, 210);
 }
 
-h1 {
+header p:first-of-type {
+    margin: 0;
+}
 
+nav {
+
+    background: rgb(199, 195, 189);
+
+}
+
+.nav__liste {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+}
+
+@media (min-width: 600px) {
+
+    .nav__liste {
+
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+
+    }
+
+}
+
+.nav__item {
+
+    list-style: none;
+    padding: 10px 0;
+    margin: 0 auto;
+
+}
+
+@media (min-width: 600px) {
+
+   .nav__item {
+
+    padding: 0;
+    margin: 0
+
+   }
+
+}
+
+header ul li a:hover {
+
+    color: #666;
+    text-decoration: underline;
+
+}
+
+h1 {
+    padding-top: 40px;
     margin: 0 auto;
     text-align: center;
 
@@ -279,7 +336,14 @@ legend {
 /* FOOTER */
 
 footer {
+
     background-color:rgb(223, 218, 210);
+    
 }
 
+footer p {
+
+    margin: 0;
+
+}
 
