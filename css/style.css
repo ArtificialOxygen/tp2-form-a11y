@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+/**
+ * @author COLLECTIF - @TIMCSF
+ *
+ * TABLE DES MATIERES
+ *
+*/
+
+/* LIENS ENTRE LES FEUILLES CSS */
+
+@import url(/css/normalize.css);
+@import url(/css/typo.css);
+@import url(/css/utilitaires.css);
+
+/* HEADER */
+
+h1 {
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+/* ----------------- FORMULAIRE ----------------- */
+
+/* FORM */
+
+form {
+
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+/* DATES */
+
+
+/* INPUT ET SELECT */
+
+.dispo-date {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
+select, input{
+
+    padding: 5px 0px 5px 5px;
+    margin: 0 0.35rem;
+    border-radius: 6px;
+    border: 3px var(--couleur-dominante) solid;
+    background-color: aliceblue;
+
+}
+
+select:focus, input:focus {
+
+    border: 5px rgb(133, 190, 77) solid;
+
+}
+
+/* NOMBRE DE PERSONNES */
+
+
+/* CHAMBRES ET FORFAITS */
+
+
+
+/* IDENTIFICATION */
+
+
+
+/* MESSAGES ERREURS */
+
+.erreur {
+
+    background-color: rgb(221, 239, 255);
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.icone {
+
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    background-image: url("../images/icones/point-dexclamation.png");
+    background-size: cover;
+    position: relative;
+    top: 4px
+    
+
+}
+
+/* STYLES FIELDSET */ 
+
+.fieldset_dates {
+
+    border: 0;
+
+}
+
+fieldset.dates {
+
+    border: 5px var(--couleur-secondaire) solid;
+    border-bottom-style: dashed;
+    border-radius: 15px 15px 0 0;
+
+}
+
+fieldset.section-nbr-personne,
+fieldset.choix-chambres {
+    
+    border: 5px var(--couleur-secondaire) solid;
+    border-bottom-style: dashed;;
+    border-top-style: dashed;
+
+}
+
+fieldset.identifiant {
+
+    border: 5px var(--couleur-secondaire) solid;
+    border-top-style: dashed;
+    border-radius: 0 0 15px 15px;
+
+}

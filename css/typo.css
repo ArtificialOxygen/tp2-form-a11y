@@ -40,12 +40,14 @@ h3,
 .h3,
 h4,
 .h4 {
-    font-family: 'News Cycle', sans-serif;
+    font-family: 'Secular One', sans-serif;
     font-weight: 700;
+    color: var(--couleur-titres-h1-h3);
 }
 
 body {
-    font-family: 'News Cycle', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    color: var(--couleur-texte);
 }
 
 
@@ -79,7 +81,7 @@ body {
 h1,
 .h1 {
     /* = 32px */
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 @media (min-width: 600px) {
