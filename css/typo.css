@@ -4,7 +4,7 @@
  * Les valeurs de taille de police suggérées ici sont à titre indicatif.
  * À ajuster selon la direction visuelle et le choix de polices de caractères.
  *
- * @author Prénom Nom courriel
+ * @author Lorie-Anne Côté 2261167@csfoy.ca
  *
  * TABLE DES MATIÈRES
  * Polices
@@ -105,7 +105,7 @@ h1,
 h2,
 .h2 {
     /* = 24px */
-    font-size: 2.4rem;
+    font-size: 2.1rem;
 }
 
 @media (min-width: 600px) {

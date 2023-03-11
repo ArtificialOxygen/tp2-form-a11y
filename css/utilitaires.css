@@ -45,6 +45,7 @@ abbr[title]:hover{
 /** Accessibilité
   * Pour cacher visuellement tout en gardant accessible un contenu:
   * screen-reader-only ou visuallyhidden **/
+  
 .screen-reader-only,
 .visuallyhidden {
     border: 0;

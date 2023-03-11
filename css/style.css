@@ -9,7 +9,10 @@
  * @author COLLECTIF - @TIMCSF
  *
  * TABLE DES MATIERES
- *
+ * Liens entre les feuilles de style CSS
+ * Header
+ * Formulaire
+ * Footer
 */
 
 /* LIENS ENTRE LES FEUILLES CSS */
@@ -19,6 +22,10 @@
 @import url(/css/utilitaires.css);
 
 /* HEADER */
+
+header {
+    background-color:rgb(223, 218, 210);
+}
 
 h1 {
 
@@ -39,8 +46,33 @@ form {
     
 }
 
-/* DATES */
+/* BOUTTONS */
 
+button {
+    border: 3px rgb(23, 61, 87) solid;
+    border-radius: 13px;
+    padding: 8px;
+    background-color: aliceblue;
+}
+
+button:hover, button:focus {
+
+    background-color: rgb(198, 217, 235);
+    border: 3.5px rgb(133, 190, 77) solid;
+
+}
+
+.bouton-confirmer {
+
+    padding-top: 50px;
+
+}
+
+.boutons {
+
+    margin: 0 1rem;
+
+}
 
 /* INPUT ET SELECT */
 
@@ -68,16 +100,104 @@ select:focus, input:focus {
 
 }
 
+/* HYPERLIENS */
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:link, a:visited {
+
+    color: rgb(23, 61, 87);
+
+}
+
+a:hover, a:active {
+
+    color: var(--couleur-dominante);
+    font-weight: bold;
+
+}
+
 /* NOMBRE DE PERSONNES */
 
+.nbr-personne {
+
+    padding-bottom: 20px;
+
+}
 
 /* CHAMBRES ET FORFAITS */
 
 
+.ctn-radio {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (min-width: 600px) {
+
+    .ctn-radio { 
+
+    
+    flex-direction: row;
+    max-width: 700px;     
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+
+   } 
+}
+
+ul.ctn-radio li {
+
+ width: 150px;
+ padding-bottom: 20px;
+
+
+}
+
+
+ul.ctn-radio img {
+
+    filter: grayscale();
+
+}
+
+ul.ctn-radio img:hover {
+
+    filter:none;
+
+}
+
+li [type="radio"]:checked+label img,
+li [type="radio"]:focus+label img {
+
+    filter:none;
+    border: 4px var(--couleur-secondaire) solid;
+
+}
+
+ul.ctn-radio li:hover {
+
+    font-weight: bold;
+
+}
 
 /* IDENTIFICATION */
 
+fieldset.identifiant label {
 
+    display: block;
+    margin-bottom: 0.5rem; 
+    padding-left: 0.5rem;
+
+}
 
 /* MESSAGES ERREURS */
 
@@ -98,8 +218,8 @@ select:focus, input:focus {
     background-image: url("../images/icones/point-dexclamation.png");
     background-size: cover;
     position: relative;
-    top: 4px
-    
+    top: 4px;
+    background-color: var(--couleur-secondaire);
 
 }
 
@@ -135,3 +255,31 @@ fieldset.identifiant {
     border-radius: 0 0 15px 15px;
 
 }
+
+/* LEGENDES FIELDSET*/
+
+legend {
+
+    text-align: center;
+
+}
+
+@media (min-width: 600px) {
+
+    legend {
+
+        text-align: left;
+
+    }
+
+}
+
+/* ------------------ FIN FORMULAIRE ------------------- */
+
+/* FOOTER */
+
+footer {
+    background-color:rgb(223, 218, 210);
+}
+
+
